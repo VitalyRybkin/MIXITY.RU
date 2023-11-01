@@ -1,7 +1,42 @@
 .main-info {
     display: flex;
-    justify-content: space-between;
+    justify-content:flex-start;
     height: 100px;
     width: 200px;
     background-color: rgb(170, 108, 27);
+}
+
+.tech-block {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.tech-block-item {
+    flex: 1;
+}
+
+.table-info {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.recom-info {
+    width: 70%;
+    padding: 30px;
+    border: 1px solid #e6e6e6;
+    box-shadow: 0 0 10px #e6e6e6;
+}
+
+.recom-info a {
+    display: block;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    width: 100%;
+    color: #1D3456;
+    font-size: 14px;
+}
+
+.recom-info a:hover {
+    text-decoration: underline;
 }

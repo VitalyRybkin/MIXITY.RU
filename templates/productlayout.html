@@ -48,15 +48,21 @@
         </article>
     </section>
 
-    {% block infotable%}
+    <section class="tech-block">
+        <div class="tech-block-item tech-spec">
+            <h3>ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ:</h3>
+            {% block infotable%}
 
-    {% endblock infotable %}
+            {% endblock infotable %}
+        </div>
 
+        <div class="tech-block-item recommendations">
+            <h3>С ЭТИМ МАТЕРИАЛОМ РЕКОМЕНДУЕМ:</h3>
+            {% block recommendations %}
 
-    {% block recomendations %}
-
-    {% endblock recomendations %}
-
+            {% endblock recommendations %}
+        </div>  
+    </section>
 {% endblock content %}
 
 {% block scripts %}

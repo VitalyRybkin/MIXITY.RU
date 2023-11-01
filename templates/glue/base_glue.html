@@ -13,5 +13,70 @@
 {% endblock itemdescbar %}
 
 {% block infotable%}
+    <table class="table-info">
+        <colgroup>
+            <col span="1" style="width: 60%;">
+            <col span="1" style="width: 40%;">
+        </colgroup>                  
+        <tr><th>Показатели смеси в сухом состоянии</th><th></th></tr>
+        <tr><td>Цвет</td><td>серый</td></tr>
+        <tr><td>Влажность</td><td>0,2%</td></tr>
+        <tr><td>Наибольшая крупность зерен наполнителя</td><td>0,63 мм</td></tr>
+        <tr><td>Содержание зерен наибольшей крупности</td><td>0,5%</td></tr>
+        <tr><td>Насыпная плотность</td><td>1450-1550 кг/м3</td></tr>
+        <tr><td>Расход сухой смеси</td><td>2-4 кг/м2</td></tr>
+        <tr><td>Количество воды:</td><td></td></tr>
+        <tr><td>на 1 кг смеси</td><td>0,20-0,24 л</td></tr>
+        <tr><td>на 25 кг смеси</td><td>5,0–6,0 л</td></tr>	
+    </table>
+    <table class="table-info">
+        <colgroup>
+            <col span="1" style="width: 60%;">
+            <col span="1" style="width: 40%;">
+        </colgroup> 
+        <tr><th>Показатели смеси, готовой к применению</th><th></th></tr>
+        <tr><td>Открытое время работы</td><td>10 мин</td></tr>
+        <tr><td>Время корректировки</td><td>10 мин</td></tr>
+        <tr><td>Жизнеспособность растворной смеси</td><td>не менее 4 часов</td></tr>
+        <tr><td>Сползание плитки с вертикальной поверхности</td><td>не более 0,5 мм</td></tr>
+        <tr><td>Максимальная толщина клеевого шва</td><td>10 мм</td></tr>
+        <tr><td>Водоудерживающая способность</td><td>98%</td></tr>
+    </table>
+    <table class="table-info">
+        <colgroup>
+            <col span="1" style="width: 60%;">
+            <col span="1" style="width: 40%;">
+        </colgroup> 
+        <tr><th>Показатели затвердевшего раствора</th><th></th></tr>
+        <tr><td>Прочность при сжатии*</td><td>не менее 7,5 МПа</td></tr>
+        <tr><td>Прочность сцепления с основанием*</td><td>не менее 0,5 МПа</td></tr>
+        <tr><td>Удельная эффективная активность естественных радионуклидов Аэфф</td><td>не более 370 Бк/кг</td></tr>
+    </table>
+    <table class="table-info">
+        <colgroup>
+            <col span="1" style="width: 60%;">
+            <col span="1" style="width: 40%;">
+        </colgroup> 
+        <tr><th>Прочее</th><th></th></tr>
+        <tr><td>Условное обозначение</td><td>СМЕСЬ СУХАЯ СТРОИТЕЛЬНАЯ КЛЕЕВАЯ С0 T, ГОСТ Р56387-2015</td></tr>
+        <tr><td>ТУ</td><td>23.64.10-002-03564602-2017</td></tr>
+        <tr><td>Дата описания</td><td>28.04.2018 г.</td></tr>
+        <tr><td>Декларация соответствия</td><td>РОСС RU Д-RU.РА01.В.17872/19 от 25.01.2019 действует до 21.01.2022</td></tr>
+
+    </table>
+    <p>	* - указанные характеристики действительны при температуре окружающей среды (20±2)°С и относительной влажности воздуха (60±10)%. При других температурно-влажностных условиях характеристики могут изменяться.</p>
 
 {% endblock infotable %}
+
+{% block recommendations %}
+    <div class="recom-info">
+        <h5>ШТУКАТУРИТЬ СТЕНУ:</h5>
+        <a href="../shtukaturki/shtukaturkaCemosloi.html">ЦемоСЛОЙ</a>
+        <a href="../shtukaturki/shtukaturkaCemosloiLait.html">ЦемоСЛОЙ ЛАЙТ</a>
+        <a href="../shtukaturki/shtukaturkaCemosloiStandartLait.html">ЦемоСЛОЙ СТАНДАРТ ЛАЙТ</a>
+        <a href="../shtukaturki/shtukaturkaCSH.html">ЦШ</a>
+        <h5>ЗАПОЛНИТЬ ШВЫ:</h5>
+        <a href="../zatirki/zatirkaMastershovGrey.html">МастерШОВ СЕРАЯ</a>
+        <a href="../zatirki/zatirkaMastershovWhite.html">МастерШОВ БЕЛАЯ</a>
+    </div>
+{% endblock recommendations %}
