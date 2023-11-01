@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">-->
+
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='normalize.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='mainmenu.css') }}">
+
+  {% block style %}
+
+  {% endblock style %}
+
+
+  <link href="../static/icons/logo-m.png" rel="shortcut icon" type="image/x-icon">
+  <link href="../static/imaiconsges/logo-m.png" rel="shortcut icon" type="image/png">
+
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500%7COpen+Sans:300,600,400%7CPT+Sans+Caption:400,700&subset=cyrillic' rel='stylesheet' type='text/css'>
+
+  {% if title %}
+  <title>{{ title }}</title>
+  {% else %}
+  <title>{{ "МИКСИТИ - сухие строительные смеси" }}</title>
+  {% endif %}
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      
+      <div class="navbar">
+        <a class="nav-item" href="{{ url_for('products') }}">ПРОДУКЦИЯ</a>
+        <a class="nav-item" href="{{ url_for('buy') }}">ГДЕ КУПИТЬ</a>
+        <a class="nav-item" href="{{ url_for('contacts') }}">КОНТАКТЫ</a>
+        <a class="nav-item" href="{{ url_for('certificates') }}">СЕРТИФИКАТЫ</a>
+        <a class="nav-item" href="{{ url_for('trademark') }}">ТОВАРНЫЙ ЗНАК</a>
+      </div>
+      
+      <div class="header-info">
+        <div class="logo">
+          <img class="houses" src="../static/icons/logo-h.png" alt="MIXITY LOGO">
+          <div class="sign" onclick="window.location.href='{{ url_for('main') }}'; return true;" style="cursor: pointer">
+            <img src="../static/icons/logo-mixity.png" alt="MIXITY LOGO">
+          </div>
+        </div>
+
+        <div class="contacts">
+          <div class="address"> РОССИЯ. САНКТ-ПЕТЕРБУРГ. 2-й МУРИНСКИЙ ПР., Д. 38.</div>
+          <div class="phone">(812) 334-53-21</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="main-menu-container">
+      <nav class="navbar-main">
+        <div class="dropdown">
+          <div class="dropdownbtn"><a href="{{ url_for('glue') }}">КЛЕЕВЫЕ</a></div>
+          <div class="dropdown-content">
+            <a href="{{ url_for('main') }}">БАЗОВЫЙ</a>
+            <a href="{{ url_for('main') }}">УСИЛЕННЫЙ СТАНДАРТ</a>
+            <a href="{{ url_for('main') }}">УСИЛЕННЫЙ</a>
+            <a href="{{ url_for('main') }}">УНИВЕРСАЛЬНЫЙ</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="dropdownbtn"><a href="{{ url_for('grout') }}">ШОВНЫЕ</a></div>
+          <div class="dropdown-content">
+            <a class="navbar-main-item" href="{{ url_for('main') }}">ЗАТИРКА БЕЛАЯ</a>
+            <a class="navbar-main-item" href="{{ url_for('main') }}">ЗАТИРКА СЕРАЯ</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="dropdownbtn"><a href="{{ url_for('plaster') }}">ШТУКАТУРНЫЕ</a></div>
+          <div class="dropdown-content">
+            <a class="navbar-main-item" href="{{ url_for('main') }}">ЦЕМОСЛОЙ ЛАЙТ</a>
+            <a class="navbar-main-item" href="{{ url_for('main') }}">ЦЕМОСЛОЙ СТАНДАРТ ЛАЙТ</a>
+            <a class="navbar-main-item" href="{{ url_for('main') }}">ЦЕМОСЛОЙ ЛАЙТ ЭКСТРА</a>
+            <a class="navbar-main-item" href="{{ url_for('main') }}">ЦШ</a>
+            <a class="navbar-main-item" href="{{ url_for('main') }}">ГИПСОСЛОЙ ЛАЙТ</a>
+            <a class="navbar-main-item" href="{{ url_for('main') }}">ГШ</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="dropdownbtn"><a href="{{ url_for('putty') }}">ШПАКЛЕВОЧНЫЕ</a></div>
+          <div class="dropdown-content">
+            <a class="navbar-main-item" href="{{ url_for('main') }}">KR</a>
+            <a class="navbar-main-item" href="{{ url_for('main') }}">VH СЕРАЯ</a>
+            <a class="navbar-main-item" href="{{ url_for('main') }}">VH БЕЛАЯ</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="dropdownbtn"><a href="{{ url_for('block') }}">МОНТАЖНЫЕ</a></div>
+          <div class="dropdown-content">
+            <a class="navbar-main-item" href="{{ url_for('main') }}">ТЕПЛОКЛЕЙ</a>
+            <a class="navbar-main-item" href="{{ url_for('main') }}">ГАЗОБЕТОН</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="dropdownbtn"><a href="{{ url_for('leveler') }}">НАПОЛЬНЫЕ</a></div>
+          <div class="dropdown-content">
+            <a class="navbar-main-item" href="{{ url_for('main') }}">ФИНИШПОЛ</a>
+            <a class="navbar-main-item" href="{{ url_for('main') }}">ЦЕМОПОЛ</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="dropdownbtn"><a href="{{ url_for('hydro') }}">ГИДРО</a></div>
+          <div class="dropdown-content">
+            <a class="navbar-main-item" href="{{ url_for('main') }}">ОБМАЗОЧНАЯ</a>
+            <a class="navbar-main-item" href="{{ url_for('main') }}">ШТУКАТУРНАЯ</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="dropdownbtn ddb-img"><a href="{{ url_for('ricks') }}"></a></div>
+          <div class="dropdown-content">
+            <a class="navbar-main-item" href="{{ url_for('main') }}">КЛЕЙ SС [SUPERCERAMIC]</a>
+            <a class="navbar-main-item" href="{{ url_for('main') }}">КЛЕЙ ЕС [EASYCERAMIC]</a>
+            <a class="navbar-main-item" href="{{ url_for('main') }}">ШПАКЛЕВКА SG [SUPERGLIDE]</a>
+            <a class="navbar-main-item" href="{{ url_for('main') }}">ШТУКАТУРКА ЕР [EASYPLAST]</a>
+            <a class="navbar-main-item" href="{{ url_for('main') }}">ПОЛ PL [PERFECTLEVEL]</a>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="navbar-pages">
+        <a href="{{ url_for('main') }}">Главная</a>
+      </div>
+      {% block content %}
+
+
+      {% endblock content %}
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="navbar">
+            <a class="nav-item" href="{{ url_for('products') }}">ПРОДУКЦИЯ</a>
+            <a class="nav-item" href="{{ url_for('buy') }}">ГДЕ КУПИТЬ</a>
+            <a class="nav-item" href="{{ url_for('contacts') }}">КОНТАКТЫ</a>
+            <a class="nav-item" href="{{ url_for('certificates') }}">СЕРТИФИКАТЫ</a>
+            <a class="nav-item" href="{{ url_for('trademark') }}">ТОВАРНЫЙ ЗНАК</a>
+      </div>
+
+      <div class="footer-info">
+        <div class="contacts">
+          <div class="address"> РОССИЯ. САНКТ-ПЕТЕРБУРГ. 2-й МУРИНСКИЙ ПР., Д. 38.</div>
+          <div class="address">E-MAIL: <a class="nav-item" href="{{ email }}">{{ email }}</a></div>
+        </div>
+
+        <div class="site-info">
+          <div> © 2012-{{ current_year }}. ООО "АВАНГАРД" - СУХИЕ СТРОИТЕЛЬНЫЕ СМЕСИ.</div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+    {% block scripts %}
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    {% endblock scripts %}
+</body>
+</html>

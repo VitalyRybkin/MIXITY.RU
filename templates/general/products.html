@@ -1,0 +1,61 @@
+{% extends "mainlayout.html" %}
+
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='generallayout.css') }}">
+    <h1>ПРОДУКЦИЯ.</h1>
+    <div class="group-line line">
+        <div class="group-block">
+            <h5>КЛЕЕВЫЕ:</h5>
+            <a href="{{ url_for('main') }}">БАЗОВЫЙ</a>
+            <a href="{{ url_for('main') }}">УСИЛЕННЫЙ СТАНДАРТ</a>
+            <a href="{{ url_for('main') }}">УСИЛЕННЫЙ</a>
+            <a href="{{ url_for('main') }}">УНИВЕРСАЛЬНЫЙ</a>
+        </div>
+        <div class="group-block">
+            <h5>ШОВНЫЕ:</h5>
+            <a class="navbar-main-item" href="{{ url_for('main') }}">ЗАТИРКА БЕЛАЯ</a>
+            <a class="navbar-main-item" href="{{ url_for('main') }}">ЗАТИРКА СЕРАЯ</a>
+        </div>
+        <div class="group-block">
+            <h5>ШТУКАТУРНЫЕ:</h5>
+            <a class="navbar-main-item" href="{{ url_for('main') }}">ЦЕМОСЛОЙ ЛАЙТ</a>
+            <a class="navbar-main-item" href="{{ url_for('main') }}">ЦЕМОСЛОЙ СТАНДАРТ ЛАЙТ</a>
+            <a class="navbar-main-item" href="{{ url_for('main') }}">ЦЕМОСЛОЙ ЛАЙТ ЭКСТРА</a>
+            <a class="navbar-main-item" href="{{ url_for('main') }}">ЦШ</a>
+            <a class="navbar-main-item" href="{{ url_for('main') }}">ГИПСОСЛОЙ ЛАЙТ</a>
+            <a class="navbar-main-item" href="{{ url_for('main') }}">ГШ</a>
+        </div>
+        <div class="group-block">
+            <h5>ШПАКЛЕВОЧНЫЕ:</h5>
+            <a class="navbar-main-item" href="{{ url_for('main') }}">KR</a>
+            <a class="navbar-main-item" href="{{ url_for('main') }}">VH СЕРАЯ</a>
+            <a class="navbar-main-item" href="{{ url_for('main') }}">VH БЕЛАЯ</a>
+        </div>
+    </div>
+    <div class="group-line line">
+        <div class="group-block">
+            <h5>МОНТАЖНЫЕ:</h5>
+            <a class="navbar-main-item" href="{{ url_for('main') }}">ТЕПЛОКЛЕЙ</a>
+            <a class="navbar-main-item" href="{{ url_for('main') }}">ГАЗОБЕТОН</a>
+        </div>
+        <div class="group-block">
+            <h5>НАПОЛЬНЫЕ:</h5>
+            <a class="navbar-main-item" href="{{ url_for('main') }}">ФИНИШПОЛ</a>
+            <a class="navbar-main-item" href="{{ url_for('main') }}">ЦЕМОПОЛ</a>
+        </div>
+        <div class="group-block">
+            <h5>ГИДРОИЗОЛЯЦИОННЫЕ:</h5>
+            <a class="navbar-main-item" href="{{ url_for('main') }}">ОБМАЗОЧНАЯ</a>
+            <a class="navbar-main-item" href="{{ url_for('main') }}">ШТУКАТУРНАЯ</a>
+        </div>
+        <div class="group-block">
+            <h5>RICK'S:</h5>
+            <a class="navbar-main-item" href="{{ url_for('main') }}">КЛЕЙ SС [SUPERCERAMIC]</a>
+            <a class="navbar-main-item" href="{{ url_for('main') }}">КЛЕЙ ЕС [EASYCERAMIC]</a>
+            <a class="navbar-main-item" href="{{ url_for('main') }}">ШПАКЛЕВКА SG [SUPERGLIDE]</a>
+            <a class="navbar-main-item" href="{{ url_for('main') }}">ШТУКАТУРКА ЕР [EASYPLAST]</a>
+            <a class="navbar-main-item" href="{{ url_for('main') }}">ПОЛ PL [PERFECTLEVEL]</a>
+        </div>
+    </div>
+
+{% endblock content %}

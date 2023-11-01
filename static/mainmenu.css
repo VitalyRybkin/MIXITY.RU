@@ -1,0 +1,90 @@
+.main-menu-container {
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 5px 6px 1px #999999;
+    font-weight: 400;
+    font-size: 15px;
+    background-color: #1D3456;
+}
+
+.navbar-main {
+    width: 60%;
+    /* min-width: 1150px; */
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+}
+
+.dropdownbtn {
+    background-color: inherit;
+    border: none;
+    color: #ccc;
+}
+
+.dropdownbtn a {
+    margin: auto;
+    display: inline-block;
+    padding: 1em 2em;
+}
+
+.ddb-img {
+    width: 120px;
+    height: 100%;
+}
+
+.ddb-img a {
+    width: 100%;
+    height: 100%;
+    background-image: url(../static/icons/RICKS_logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+}
+
+.dropdown-content {
+    display: none;
+    /* padding: 0.5em 1em 0.2em 0.1em; */
+    width: 250px;
+    position: absolute;
+    font-size: 13px;
+}
+
+.dropdown:hover .dropdownbtn {
+    background-color: #455985;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: #455985;
+    /* box-shadow: 2px 3px 3px 1px #999999; */
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px 30px;
+}
+
+@media(max-width: 1439px) {
+    .main-menu-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar-main {
+        flex-wrap: wrap;
+    }
+
+    .dropdown {
+        flex: 25%;
+        max-width: 25%;
+    }
+}
+
+@media(max-width: 767px) {
+    .dropdown {
+        flex: 50%;
+        max-width: 50%;
+    }
+}

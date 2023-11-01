@@ -1,0 +1,39 @@
+
+.line {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.group-line {
+    flex-direction: row;
+    width: 100%;
+}
+
+.group-block {
+    width: 25%;
+    min-width: 200px;
+}
+
+.group-block a, 
+.line a, 
+table a, 
+p {
+    display: block;
+    padding: 0.2em;
+    font-size: 14px;
+    color: #1D3456;
+}
+
+table {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #1D3456;
+    }
+
+table td{
+    padding: 5px;}
+
+
+

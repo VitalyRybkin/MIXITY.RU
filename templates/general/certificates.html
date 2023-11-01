@@ -1,0 +1,29 @@
+{% extends "mainlayout.html" %}
+
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='generallayout.css') }}">
+    <h1>СЕРТИФИКАТЫ МИКСИТИ:</h1>
+    <div class="line">
+        <a href="../static/certs/sgr_mixity.pdf" target="_blank">СВИДЕТЕЛЬСТВО О ГОСУДАРСТВЕННОЙ РЕГИСТРАЦИИ</a>
+        <a href="../static/certs/expert_mixity.pdf" target="_blank">ЭКСПЕРТНОЕ ЗАКЛЮЧЕНИЕ</a>
+        <a href="../static/certs/certificate_mixity_gost_r.pdf" target="_blank">СЕРТИФИКАТ СООТВЕТСТВИЯ ГОСТ Р</a>
+        <a href="../static/certs/mixity_fire_solution.pdf" target="_blank">РЕШЕНИЕ (пожарная безопасность)</a>
+        <a href="../static/certs/mixity_protocol_face.pdf" target="_blank">ПРОТОКОЛ ИСПЫТАНИЙ (лицевая сторона)</a></td></tr>
+        <a href="../static/certs/mixity_protocol_back.pdf" target="_blank">ПРОТОКОЛ ИСПЫТАНИЙ (оборотная сторона)</a>
+    </div>
+
+    <h1>СЕРТИФИКАТЫ RICK'S:</h1>
+    <div class="line">
+        <table>
+            <a href="../static/certs/sgr_ricks_cement.pdf" target="_blank">СВИДЕТЕЛЬСТВО О ГОСУДАРСТВЕННОЙ РЕГИСТРАЦИИ (цементные)</a>
+            <a href="../static/certs/sgr_ricks_gips.pdf" target="_blank">СВИДЕТЕЛЬСТВО О ГОСУДАРСТВЕННОЙ РЕГИСТРАЦИИ (гипсовые)</a>
+            <a href="../static/certs/sgr_ricks_polymer.pdf" target="_blank">СВИДЕТЕЛЬСТВО О ГОСУДАРСТВЕННОЙ РЕГИСТРАЦИИ (полимерные)</a>
+            <a href="../static/certs/lab_protocol_ricks_cement.pdf" target="_blank">ПРОТОКОЛ ЛАБОРАТОРНЫХ ИССЛЕДОВАНИЙ (цементные)</a>
+            <a href="../static/certs/lab_protocol_ricks_gips.pdf" target="_blank">ПРОТОКОЛ ЛАБОРАТОРНЫХ ИССЛЕДОВАНИЙ (гипсовые)</a>
+            <a href="../static/certs/lab_protocol_ricks_polymer.pdf" target="_blank">ПРОТОКОЛ ЛАБОРАТОРНЫХ ИССЛЕДОВАНИЙ (полимерные)</a>
+            <a href="../static/certs/ricks_fire_solution.pdf" target="_blank">РЕШЕНИЕ (пожарная безопасность)</a>
+            <a href="../static/certs/expert_ricks.pdf" target="_blank">ЭКСПЕРТНОЕ ЗАКЛЮЧЕНИЕ</a>
+        </table>
+     </div>
+
+{% endblock content %}

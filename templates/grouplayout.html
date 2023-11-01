@@ -1,0 +1,52 @@
+{% extends "mainlayout.html" %}
+
+{% block style %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='groups.css') }}">
+
+    <script src="../static/scripts/jquery-1.7.1.js"></script>
+    <script src="../static/scripts/jquery.easing.1.js"></script>
+	<script src="../static/scripts/jquery.tablify.js"></script>
+    <script src="../static/scripts/jquery.tablify.ext.js"></script>
+
+{% endblock style %}
+
+{% block content %}
+    {% block head %}
+
+    {% endblock head %}
+
+    {% block groupitems%}
+
+    {% endblock groupitems %}
+
+    {% block infotable%}
+
+    {% endblock infotable %}
+
+
+{% endblock content %}
+
+{% block scripts %}
+    <script>
+            $(".table-info")
+            .tablify("clear",
+                 {
+                 headerAlign:'left',
+                 headerPadding:'5px',
+                 headerFontSize:'13px',
+                 headerFontColor:'#fff',
+                 headerBackground:'#606b89',
+                 headerBorderBottom:'1px solid #3E4C6E',
+                 headerBorderTop:'thin solid #3E4C6E',
+                 headerFont:'Open sans, sans-serif',
+                 rowsBackground: '#FAFAFA',
+                 tableBorderBottom:'thin solid #3E4C6E',
+                 tableBorderCollapse:"collapse",
+                 rowsPadding:'5px',
+                 rowsFontColor:'#1D3456',
+                 rowsFont:'Open sans, sans-serif',
+                 rowsFontSize:'11px',
+                 hover:'#EEEEEE'});
+    </script>
+{% endblock scripts %}
+

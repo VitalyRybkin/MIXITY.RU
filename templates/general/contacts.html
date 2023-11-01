@@ -1,0 +1,23 @@
+{% extends "mainlayout.html" %}
+
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='generallayout.css') }}">
+    <h1>КОНТАКТЫ.</h1>
+    <!-- <div class="line">
+        <div class="group-block"> -->
+            <h5>ВРЕМЯ РАБОТЫ:</h5>
+            <table>
+                <tr><td>Офис:</td><td>с 10-00 до 18-00</td></tr>
+                <tr><td>Прием заявок:</td><td>с 10-00 до 16-00</td></tr>
+            </table>
+        <!-- </div>
+        <div class="group-block"> -->
+            <h5>КОНТАКТЫ:</h5>
+            <table>
+                <tr><td>Телефон:</td><td>(812) 334-53-21</td></tr>
+                <tr><td>Почта:</td><td><a href="{{ email }}">{{ email }}</a></td></tr>
+            </table>
+        <!-- </div>
+     </div> -->
+
+{% endblock content %}
